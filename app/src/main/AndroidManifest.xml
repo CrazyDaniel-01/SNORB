@@ -13,10 +13,7 @@
         android:theme="@style/Theme.SNORB"
         tools:targetApi="31">
 
-        <activity
-            android:name=".ActivityAdmin"
-            android:exported="false"
-            android:label="@string/title_activity_admin" />
+
         <activity
             android:name=".PRUEBA"
             android:exported="false" />

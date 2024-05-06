@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val btn = findViewById<Button>(R.id.btnLogin)
         btn.setOnClickListener{
-            val intent = Intent(this,VistaAdmin::class.java)
+            val intent = Intent(this,ActivityAdmin::class.java)
             startActivity(intent)
         }
 

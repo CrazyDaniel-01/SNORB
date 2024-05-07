@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SNORB"
         tools:targetApi="31">
-
+        <activity
+            android:name=".ActivityRecolector"
+            android:exported="false" />
         <activity
             android:name=".ActivityListaUsuarios"
             android:exported="false" />

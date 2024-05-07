@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Rutas"
+        android:id="@+id/rutas_admin"
+        android:icon="@drawable/baseline_alt_route_24"/>
+
+    <item android:title="foto multa"
+        android:id="@+id/fotomulta_admin"
+        android:icon="@drawable/baseline_add_a_photo_24"/>
+
+    <item android:title="Anuncios"
+        android:id="@+id/anuncios_admin"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item android:title="Ajustes"
+        android:id="@+id/ajustes_recolector"
+        android:icon="@drawable/baseline_app_settings_alt_24"/>
+</menu>

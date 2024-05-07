@@ -24,6 +24,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,ActivityCiudadano::class.java)
             startActivity(intent)
         }
+        val recolector = findViewById<Button>(R.id.btnRecolector)
+        recolector.setOnClickListener{
+            val intent = Intent(this,ActivityRecolector::class.java)
+            startActivity(intent)
+        }
 
 
     }

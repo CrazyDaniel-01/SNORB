@@ -55,6 +55,11 @@ class AjustesAdmin : Fragment() {
             val intent = Intent(requireContext(), ActivityPerfil::class.java)
             startActivity(intent)
         }
+        val rep = view.findViewById<Button>(R.id.btnReportes)
+        rep.setOnClickListener{
+            val intent = Intent(requireContext(), ActivityReportesAdmin::class.java)
+            startActivity(intent)
+        }
 
 
     }

@@ -13,6 +13,18 @@
         android:theme="@style/Theme.SNORB"
         tools:targetApi="31">
         <activity
+            android:name=".ActivityListaUsuarios"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityPublicaciones"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityGestionRutas"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityReportesAdmin"
+            android:exported="false" />
+        <activity
             android:name=".ActivityPerfil"
             android:exported="false" />
         <activity

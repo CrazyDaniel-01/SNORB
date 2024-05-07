@@ -85,7 +85,7 @@
             android:id="@+id/btnLogin"
             android:layout_width="750px"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="Admin"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.491"
@@ -107,6 +107,27 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnCiudadano"
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="Ciudadano"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+        <Button
+            android:id="@+id/btnRecolector"
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:text="Recolector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.408"
+            app:layout_constraintStart_toEndOf="@+id/btnCiudadano"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

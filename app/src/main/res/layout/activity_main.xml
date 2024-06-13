@@ -85,7 +85,7 @@
             android:id="@+id/btnLogin"
             android:layout_width="750px"
             android:layout_height="wrap_content"
-            android:text="Admin"
+            android:text="Iniciar Sesión"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.491"
@@ -108,25 +108,26 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/btnCiudadano"
-            android:layout_width="350px"
+        <TextView
+            android:id="@+id/tvregistrar"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:text="Ciudadano"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="24dp"
+            android:text="¿No tiene cuenta?"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.237"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
         <Button
-            android:id="@+id/btnRecolector"
-            android:layout_width="350px"
+            android:id="@+id/BtnRegistrar"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Recolector"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="4dp"
+            android:text="Registrese"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.408"
-            app:layout_constraintStart_toEndOf="@+id/btnCiudadano"
+            app:layout_constraintHorizontal_bias="0.645"
+            app:layout_constraintStart_toStartOf="@+id/tvregistrar"
             app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -163,6 +164,7 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

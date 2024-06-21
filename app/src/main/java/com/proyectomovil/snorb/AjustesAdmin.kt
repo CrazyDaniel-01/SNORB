@@ -67,6 +67,12 @@ class AjustesAdmin : Fragment() {
             startActivity(intent)
         }
 
+        val publi = view.findViewById<Button>(R.id.btnPublicaciones)
+        publi.setOnClickListener{
+            val intent = Intent(requireContext(), publicacionesAdmin::class.java)
+            startActivity(intent)
+        }
+
     }
 
     companion object {
@@ -88,4 +94,7 @@ class AjustesAdmin : Fragment() {
                 }
             }
     }
+
+
+
 }

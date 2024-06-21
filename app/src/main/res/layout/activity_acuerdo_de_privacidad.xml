@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/privacidadDatosPersonales"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcuerdoDePrivacidad">
+
+    <ScrollView
+        android:layout_width="1000px"
+        android:layout_height="1850px"
+        android:background="@color/gris_perron"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/Introduccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Introduccion"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/IntroduccionDescrita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La aplicación SNORB (Sistema de Notificación de Recolección de Basura) es proporcionada por el H. Ayuntamiento de Xalapa, Veracruz. Nos comprometemos a proteger su privacidad y garantizar que sus datos personales estén seguros. Este acuerdo de privacidad describe cómo recopilamos, usamos y protegemos su información personal."
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/InformacionRecopilada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Información Recopilada"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/InformacionRecopiladaDescrita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Información de Registro : 	Nombre ,	Dirección ,	Contraseña , Código postal. Información de Ubicación ,	Datos de ubicación en tiempo real para mostrar puntos de recolección cercanos. Información de la Cámara ,	Imágenes capturadas a través de la cámara para reportes de basura mal colocada. "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/UsoDeInformacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uso De Informacion"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/UsoDeInformacionDescrito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Propósitos: Proveer y mejorar nuestros servicios, Verificar y autenticar a los usuarios, Enviar notificaciones y actualizaciones relacionadas con la aplicación, Gestionar y resolver reportes de basura mal colocada, Analizar el uso de la aplicación para mejorar su funcionalidad. Compartición de Datos: No compartimos su información personal con terceros, excepto cuando sea necesario para cumplir con la ley o responder a procesos legales. "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/seguridadInformatica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seguridad De La Informacion"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/seguridadInformaticaDescrita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medidas de Seguridad: Implementamos medidas de seguridad adecuadas para proteger su información contra accesos no autorizados, alteraciones, divulgaciones o destrucciones, adicionalmente Almacenamos sus datos en servidores seguros y utilizamos tecnología de encriptación para proteger la información durante la transmisión. Acceso y Control: Solo el personal autorizado del H. Ayuntamiento de Xalapa, Veracruz tiene acceso a la información personal. "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/RetenciónDeDatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Retención De Datos"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/RetenciónDeDatosDescrita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Duración: Conservamos sus datos personales solo durante el tiempo necesario para cumplir con los propósitos descritos en este acuerdo de privacidad o según lo requerido por la ley. Eliminación de Datos: Puede solicitar la eliminación de su cuenta y datos personales en cualquier momento poniéndose en contacto con nosotros a través del correo jorgeluiscazas@gmail.com o al número 9221231630. "
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

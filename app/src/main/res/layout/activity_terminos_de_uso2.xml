@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/privacidadDatosPersonales"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TerminosDeUso">
+
+    <ScrollView
+        android:layout_width="1000px"
+        android:layout_height="1850px"
+        android:background="@color/gris_perron"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerPadding="15px"
+            android:orientation="vertical"
+            android:padding="15px">
+
+            <TextView
+                android:id="@+id/dGenerales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Datos Generales"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/dGeneralesDescritos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La aplicación SNORB (Sistema de Notificación de Recolección de Basura) es proporcionada por el H. Ayuntamiento de Xalapa, Veracruz. Para soporte, puede contactarnos a través del correo electrónico jorgeluiscazas@gmail.com o al número 9221231630"
+                android:textAlignment="viewStart"
+                android:textDirection="rtl"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/uDeApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uso De La Aplicación"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/uDeAppDescritos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SNORB es una aplicación diseñada para ayudar a los ciudadanos a identificar puntos de recolección de basura cercanos y para reportar basura mal colocada mediante fotografías. Para aprovechar todas las funcionalidades de la aplicación, es necesario otorgar permisos de acceso a la ubicación del dispositivo y a la cámara."
+                android:textAlignment="viewStart"
+                android:textDirection="rtl"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registro De Usuarios"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/RegistroDescritos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para utilizar SNORB, es necesario registrarse y crear una cuenta. Existen tres tipos de usuarios: Administrador, Ciudadano y Trabajador de Limpia Pública. Cada tipo de cuenta tiene diferentes permisos y funcionalidades.  Responsabilidades del Usuario: Usted es responsable de mantener la confidencialidad de su nombre de usuario y contraseña. Usted se compromete a notificar inmediatamente cualquier uso no autorizado de su cuenta. "
+                android:textAlignment="viewStart"
+                android:textDirection="rtl"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/PrivacidadDatosPersonales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Privacidad y Datos Personales"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/PrivacidadDatosPersonalesDescritos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Datos Recopilados: Información de registro (nombre, dirección, código postal.). Datos de ubicación para mostrar puntos de recolección cercanos. Imágenes capturadas para reportes de basura mal colocada. Uso de los Datos: Los datos se utilizan exclusivamente para el funcionamiento de la aplicación y la mejora de los servicios proporcionados. Protección de Datos: La aplicación cumple con la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados y otras leyes relevantes de protección de datos personales en México. Para más detalles, consulte nuestra Política de Privacidad. "
+                android:textAlignment="viewStart"
+                android:textDirection="rtl"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/uAceptable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UsoAceptable"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/uAceptableDescrito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comportamientos Prohibidos: Usar la aplicación para cualquier propósito ilegal o no autorizado. Compartir contenido que sea difamatorio, ofensivo o que infrinja derechos de terceros. Consecuencias: Cualquier violación de estos términos puede resultar en la terminación de su cuenta y la prohibición de uso futuro de la aplicación. "
+                android:textAlignment="viewStart"
+                android:textDirection="rtl"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/PropiedadIntelectual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Propiedad Intelectual"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/PropiedadIntelectualDescrito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Derechos: Todo el contenido de la aplicación, incluidos textos, gráficos, logotipos, y software, es propiedad intelectual del H. Ayuntamiento de Xalapa, Veracruz y está protegido por las leyes de derechos de autor y propiedad intelectual aplicables. Uso Permitido: Se le otorga una licencia limitada para acceder y usar la aplicación exclusivamente para su uso personal y no comercial. "
+                android:textAlignment="viewStart"
+                android:textDirection="rtl"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Disputas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resolución De Disputas"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/DisputasDescritas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jurisdicción: Estos términos se rigen por las leyes de México, específicamente la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados. Resolución de Disputas: Cualquier disputa que surja en relación con estos términos será resuelta mediante los tribunales competentes en Xalapa, Veracruz "
+                android:textAlignment="viewStart"
+                android:textDirection="rtl"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

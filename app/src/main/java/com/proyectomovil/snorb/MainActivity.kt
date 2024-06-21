@@ -41,10 +41,20 @@ class MainActivity : AppCompatActivity() {
                                 startActivity(intent)
                             }else  {
                                 val intent = Intent(this,ActivityRecolector::class.java)
+                                val sharedPref = this.getSharedPreferences("MiSharedPreferences", MODE_PRIVATE)
+                                with(sharedPref.edit()){
+                                    putString("Apodo",buscaUsuario.toString())
+                                    apply()
+                                }
                                 startActivity(intent)
                             }
                         }else{
                             val intent = Intent(this,ActivityAdmin::class.java)
+                            val sharedPref = this.getSharedPreferences("MiSharedPreferences", MODE_PRIVATE)
+                            with(sharedPref.edit()){
+                                putString("Apodo",buscaUsuario.toString())
+                                apply()
+                            }
                             startActivity(intent)
                         }
 

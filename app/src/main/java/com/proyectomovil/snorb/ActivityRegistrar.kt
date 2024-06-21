@@ -24,14 +24,36 @@ class ActivityRegistrar : AppCompatActivity() {
         binding = ActivityRegistrarBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnRegistrar.setOnClickListener{
+        binding.btnRegistrar.isEnabled = false
+
+        binding.ADP.setOnClickListener {
+            val intent = Intent(this@ActivityRegistrar, AcuerdoDePrivacidad::class.java)
+            startActivity(intent)
+        }
+
+        binding.TDU.setOnClickListener {
+            val intent = Intent(this@ActivityRegistrar, TerminosDeUso::class.java)
+            startActivity(intent)
+        }
+
+        binding.checkBox.setOnCheckedChangeListener { _, isChecked ->
+            binding.btnRegistrar.isEnabled = isChecked
+        }
+
+        binding.btnRegistrar.setOnClickListener {
             val nombre = binding.nom.text.toString()
             val direccion = binding.dir.text.toString()
-            val codigoPostal =binding.cop.text.toString()
+            val codigoPostal = binding.cop.text.toString()
             val contraseña = binding.con.text.toString()
-            val tipoUsuario= "Ciudadano"
+            val tipoUsuario = "Ciudadano"
 
-            databaseReference =FirebaseDatabase.getInstance().getReference("Usuario")
+            if (nombre.isEmpty() || direccion.isEmpty() || codigoPostal.isEmpty() || contraseña.isEmpty()) {
+                Toast.makeText(this, "Por favor, llene todos los campos", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+
+            databaseReference = FirebaseDatabase.getInstance().getReference("Usuario")
             val usuario = Usuario(nombre, direccion, contraseña, codigoPostal, tipoUsuario)
             databaseReference.child(nombre).setValue(usuario).addOnSuccessListener {
                 binding.nom.text.clear()
@@ -39,13 +61,14 @@ class ActivityRegistrar : AppCompatActivity() {
                 binding.cop.text.clear()
                 binding.con.text.clear()
 
-                Toast.makeText(this,"UsuarioRegistrado",Toast.LENGTH_SHORT).show()
-                val intent = Intent(this@ActivityRegistrar,MainActivity::class.java)
+                Toast.makeText(this, "UsuarioRegistrado", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this@ActivityRegistrar, MainActivity::class.java)
                 startActivity(intent)
                 finish()
-            }.addOnFailureListener{
-                Toast.makeText(this,"ñeee está mal",Toast.LENGTH_SHORT).show()
+            }.addOnFailureListener {
+                Toast.makeText(this, "ñeee está mal", Toast.LENGTH_SHORT).show()
             }
+
         }
     }
 }

@@ -49,7 +49,7 @@ class AjustesCiudadano : Fragment() {
         }
         val rep = view.findViewById<Button>(R.id.btnReportes)
         rep.setOnClickListener{
-            val intent = Intent(requireContext(), ActivityReportesAdmin::class.java)
+            val intent = Intent(requireContext(), ActivityReportesCiudadano::class.java)
             startActivity(intent)
         }
 

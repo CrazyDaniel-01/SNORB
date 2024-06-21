@@ -1,22 +1,22 @@
 {
   "project_info": {
-    "project_number": "335049611587",
-    "firebase_url": "https://movil-10c97-default-rtdb.firebaseio.com",
-    "project_id": "movil-10c97",
-    "storage_bucket": "movil-10c97.appspot.com"
+    "project_number": "354508752375",
+    "firebase_url": "https://fotomulta-80868-default-rtdb.firebaseio.com",
+    "project_id": "fotomulta-80868",
+    "storage_bucket": "fotomulta-80868.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:335049611587:android:97776d2b8c0d01bd4c77f6",
+        "mobilesdk_app_id": "1:354508752375:android:a5bb7cb764be7086fcdaf2",
         "android_client_info": {
-          "package_name": "com.example.myapplication"
+          "package_name": "com.desarrollomovil.fotomulta"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDj5Mvo9tv13SzmpnMCnwjjavjZ71R7NPE"
+          "current_key": "AIzaSyB0iqo3yfwk9Js8Q8Y0NVzBbAfyi-QKLBc"
         }
       ],
       "services": {
@@ -27,7 +27,7 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:335049611587:android:e6a49d42bf00cd0d4c77f6",
+        "mobilesdk_app_id": "1:354508752375:android:81df84f22a7c0a7afcdaf2",
         "android_client_info": {
           "package_name": "com.proyectomovil.snorb"
         }
@@ -35,7 +35,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDj5Mvo9tv13SzmpnMCnwjjavjZ71R7NPE"
+          "current_key": "AIzaSyB0iqo3yfwk9Js8Q8Y0NVzBbAfyi-QKLBc"
         }
       ],
       "services": {

@@ -15,7 +15,7 @@ class ActivityReportesAdmin : AppCompatActivity() {
 
     private lateinit var listView: ListView
     private lateinit var imageAdapter: ImageAdapter
-    private val databaseReference = FirebaseDatabase.getInstance().getReference("images")
+    private val databaseReference = FirebaseDatabase.getInstance().getReference("reportes")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

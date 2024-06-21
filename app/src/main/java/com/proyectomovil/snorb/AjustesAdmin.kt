@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
+import com.example.myapplication.ActivityListaUsuarios
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -60,7 +61,11 @@ class AjustesAdmin : Fragment() {
             val intent = Intent(requireContext(), ActivityReportesAdmin::class.java)
             startActivity(intent)
         }
-
+        val usr = view.findViewById<Button>(R.id.btnListaUsuarios)
+        usr.setOnClickListener{
+            val intent = Intent(requireContext(), ActivityListaUsuarios::class.java)
+            startActivity(intent)
+        }
 
     }
 

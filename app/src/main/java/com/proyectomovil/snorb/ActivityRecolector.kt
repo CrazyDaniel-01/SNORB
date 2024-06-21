@@ -17,7 +17,7 @@ class ActivityRecolector : AppCompatActivity() {
             when (menuItem.itemId) {
 
                 R.id.rutas_admin -> replaceFragment(rutasAdmin())
-                R.id.fotomulta_admin -> replaceFragment(fotomulta())
+                R.id.fotomulta_admin -> replaceFragment(fotomultaAdmin())
                 R.id.anuncios_admin -> replaceFragment(AnuncioAdmin())
                 R.id.ajustes_recolector -> replaceFragment(AjustesRecolector())
 

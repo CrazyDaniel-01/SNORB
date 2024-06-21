@@ -10,8 +10,8 @@ import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.proyectomovil.snorb.model.ImageData
 
-class ImageAdapter(context: Context, private val resource: Int, private val images: List<ImageData>) :
-    ArrayAdapter<ImageData>(context, resource, images) {
+class ImageAdapter(context: Context, private val resource: Int, private val reportes: List<ImageData>) :
+    ArrayAdapter<ImageData>(context, resource, reportes) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val view = convertView ?: LayoutInflater.from(context).inflate(resource, parent, false)

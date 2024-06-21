@@ -4,6 +4,7 @@ plugins {
 
     // Añadir la dependencia para el plugin de Google services
     id("com.google.gms.google-services") version "4.4.2" apply false
+
 }
 
 buildscript {

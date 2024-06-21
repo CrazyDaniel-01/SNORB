@@ -45,7 +45,7 @@
             android:exported="false" />
         <activity
             android:name=".ActivityReportesAdmin"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ActivityPerfil"
             android:exported="false" />
@@ -64,6 +64,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
